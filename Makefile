@@ -6,7 +6,10 @@ fire: fire.c
 	gcc `pkg-config --cflags sdl` -o fire fire.c `pkg-config --libs sdl`
 
 install: fire
-	cp fire ${TOARU_SYSROOT}/usr/bin/
+	cp fire /usr/bin/firesdl
+
+uninstall:
+	rm /usr/bin/firesdl
 
 clean:
 	rm -f fire
