@@ -114,7 +114,7 @@ unsigned char *p3, *p4;
 	}
 }
 
-void disk(x,y,rad)
+void disk(int x,int y, int rad)
 {
 unsigned char *p;
 int i,j,k,aj;
@@ -336,7 +336,7 @@ int r,g,b;
 	updatemap();
 }
 
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int i,k;
 char *remap,*remap2;
